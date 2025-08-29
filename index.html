@@ -390,10 +390,15 @@
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
-        // Force scroll to top on page load to prevent auto-scrolling bug
-        window.onload = function() {
-            window.scrollTo(0, 0);
-        };
+        // Ensure initial load opens at the hero (top), even if URL has a hash
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.location.hash) {
+                history.replaceState(null, document.title, window.location.pathname + window.location.search);
+            }
+            setTimeout(function() {
+                window.scrollTo(0, 0);
+            }, 0);
+        });
 
         // Initialize Lucide Icons
         lucide.createIcons();
