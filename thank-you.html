@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>נתראה בסדנה!</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Heebo', sans-serif;
+        }
+        /* הגדרת משתני צבעים של המותג */
+        :root {
+            --brand-dark-deep: #101933;
+            --brand-gold: #eec643;
+            --brand-light-gray: #d8d5db;
+        }
+        .bg-brand-dark-deep { background-color: var(--brand-dark-deep); }
+        .text-brand-gold { color: var(--brand-gold); }
+        .text-brand-light-gray { color: var(--brand-light-gray); }
+        .border-brand-gold { border-color: var(--brand-gold); }
+        .hover\:bg-brand-gold:hover { background-color: var(--brand-gold); }
+        .hover\:text-brand-dark-deep:hover { color: var(--brand-dark-deep); }
+    </style>
+
+    </head>
+<body class="bg-brand-dark-deep text-white flex items-center justify-center min-h-screen">
+    
+    <div class="text-center p-8 max-w-2xl mx-auto">
+        <i data-lucide="party-popper" class="w-24 h-24 mx-auto text-brand-gold mb-6"></i>
+        
+        <h1 class="text-4xl md:text-6xl font-black leading-tight mb-4">
+            מעולה! נתראה בסדנה.
+        </h1>
+        
+        <p class="text-lg md:text-xl text-brand-light-gray max-w-lg mx-auto mb-10">
+            ההרשמה שלך הושלמה והמקום שלך שמור. אישור ופרטים נוספים יישלחו למייל שהזנת.
+        </p>
+        
+        <div class="border-t border-white/20 pt-8">
+            <p class="text-md text-brand-light-gray mb-4">יש לך שאלה או משהו לא ברור? אפשר לדבר איתי ישירות בוואטסאפ.</p>
+            <a 
+                href="https://wa.me/972507772807?text=%D7%94%D7%99%D7%99%20%D7%90%D7%91%D7%99%2C%20%D7%A0%D7%A8%D7%A9%D7%9E%D7%AA%D7%99%20%D7%9C%D7%A1%D7%93%D7%A0%D7%AA%20%D7%94%D7%A9%D7%99%D7%95%D7%95%D7%A7%20%D7%A2%D7%9D%20AI%20%D7%95%D7%99%D7%A9%20%D7%9C%D7%99%20%D7%A9%D7%90%D7%9C%D7%94"
+                target="_blank"
+                class="inline-flex items-center justify-center gap-3 px-8 py-3 bg-transparent border-2 border-brand-gold text-brand-gold font-bold rounded-lg text-lg transition-all duration-300 hover:bg-brand-gold hover:text-brand-dark-deep hover:scale-105">
+                <i data-lucide="message-circle" class="w-6 h-6"></i>
+                <span>שליחת הודעה בוואטסאפ</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
