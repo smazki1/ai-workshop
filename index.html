@@ -181,10 +181,6 @@
                                         <input type="text" id="name" name="name" class="w-full p-3 rounded-md bg-gray-100 text-gray-800 form-input border border-gray-300" required>
                                     </div>
                                     <div class="mb-4">
-                                        <label for="email" class="block mb-2 font-bold">כתובת אימייל</label>
-                                        <input type="email" id="email" name="email" class="w-full p-3 rounded-md bg-gray-100 text-gray-800 form-input border border-gray-300" required>
-                                    </div>
-                                    <div class="mb-4">
                                         <label for="phone" class="block mb-2 font-bold">טלפון</label>
                                         <input type="tel" id="phone" name="phone" class="w-full p-3 rounded-md bg-gray-100 text-gray-800 form-input border border-gray-300" required>
                                     </div>
@@ -254,7 +250,6 @@
                 const payload = {
                     ts: Date.now(),
                     name: form.name.value.trim(),
-                    email: form.email.value.trim(),
                     phone: form.phone.value.trim(),
                     plan: 'סדנת AI – כרטיס רגיל',
                     amount: 199,
